@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div></div>
+    <div>你好</div>
 </body>
 <script>
     console.log('牛蛙' + i);
@@ -17,11 +18,32 @@
     fn(1)
     function fn(i) {
         if (i === 4) return
-        console.log('大牛蛙' + i);
-        fn(i + 1)
-        console.log('小牛蛙' + i);
+        console.log('肥牛蛙' + i);
+        fn(i + 1) //递归
+        console.log('瘦牛蛙' + i);
     }
-    console.log('胖牛蛙' + i);
+    console.log('牛蛙' + i);
+
+    if (!(b in window)) {
+        var b = '牛蛙'
+        console.log(1);
+    }
+    console.log(b);
+
+    function F() { }
+    Object.prototype.a = function () {
+        console.log("a()");
+    };
+
+    Function.prototype.b = function () {
+        console.log("b()");
+    };
+
+    var f = new F();
+    f.a();
+    // f.b(); 不能执行
+    F.a();
+    F.b();
 </script>
 
 </html>
